@@ -1,5 +1,5 @@
 # Frontend mentor challenge using Sass
-[>Demo<](https://chapst1.github.io/fronted-mentor-challengue-news-home-page)
+[>Demo<](https://chapst1.github.io/frontend-mentor-challengue-news-home-page/)
 #
 [>Frontend Mentor<](https://www.frontendmentor.io/home)
 #
