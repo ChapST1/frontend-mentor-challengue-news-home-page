@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | News homepage</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <style>
+      .attribution {
+        font-size: 0.9375rem;
+        font-family: "inter", sans-serif;
+        text-align: center;
+        padding: 20px 0;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+      .attribution a:hover {
+        color: #e0564d;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <a href="#" class="header__link logo">
+        <img src="./assets/images/logo.svg" alt="logo" class="logo__img" />
+      </a>
+      <img
+        src="./assets/images/icon-menu.svg"
+        alt="menu"
+        class="header__menu"
+      />
+
+      <nav class="header__nav nav">
+        <img
+          src="./assets/images/icon-menu-close.svg"
+          alt="close icon"
+          class="nav__close"
+        />
+        <ul class="nav__ul">
+          <li class="nav__li"><a href="#" class="nav__a">Home</a></li>
+          <li class="nav__li"><a href="#" class="nav__a">New</a></li>
+          <li class="nav__li"><a href="#" class="nav__a">Popular</a></li>
+          <li class="nav__li"><a href="#" class="nav__a">Trending</a></li>
+          <li class="nav__li"><a href="#" class="nav__a">Categories</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- main -->
+    <main class="main">
+      <section class="main__flex flex">
+        <div class="flex__hero hero">
+          <img
+            src="./assets/images/image-web-3-desktop.jpg"
+            alt="hero image"
+            class="hero__img"
+          />
+          <img
+            src="./assets/images/image-web-3-mobile.jpg"
+            alt="hero image"
+            class="hero__img hero__img-mobile"
+          />
+
+          <div class="hero__article title">
+            <h2 class="title__title">The Bright Future of Web 3.0?</h2>
+          </div>
+          <div class="hero__article article">
+            <div class="article__description description">
+              <p class="description__paragraph">
+                We dive into the next evolution of the web that claims to put
+                the power of the platforms back into the hands of the people.
+                But is it really fulfilling its promise?
+              </p>
+              <button class="description__btn">READ MORE</button>
+            </div>
+          </div>
+        </div>
+        <div class="flex__news news">
+          <h2 class="news__title">New</h2>
+          <article class="news__article article">
+            <h4 class="article__title">Hydrogen VS Electric Cars</h4>
+            <p class="article__paragraph">
+              Will hydrogen-fueled cars ever catch up to EVs?
+            </p>
+          </article>
+          <article class="news__article article">
+            <h4 class="article__title">Hydrogen VS Electric Cars</h4>
+            <p class="article__paragraph">
+              Will hydrogen-fueled cars ever catch up to EVs?
+            </p>
+          </article>
+          <article class="news__article article">
+            <h4 class="article__title">Hydrogen VS Electric Cars</h4>
+            <p class="article__paragraph">
+              Will hydrogen-fueled cars ever catch up to EVs?
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="articles">
+        <article class="article__item article">
+          <img
+            src="./assets/images/image-retro-pcs.jpg"
+            alt="article image"
+            class="article__img"
+          />
+
+          <div class="article__description description">
+            <span class="description__number">01</span>
+            <h3 class="description__title">Reviving Retro PCs</h3>
+            <p class="description__paragraph">
+              What happens when old PCs are given modern upgrades?
+            </p>
+          </div>
+        </article>
+        <article class="article__item article">
+          <img
+            src="./assets/images/image-top-laptops.jpg"
+            alt="article image"
+            class="article__img"
+          />
+
+          <div class="article__description description">
+            <span class="description__number">02</span>
+            <h3 class="description__title">Top 10 Laptops of 2022</h3>
+            <p class="description__paragraph">
+              Our best picks for various ennds and budgets.
+            </p>
+          </div>
+        </article>
+        <article class="article__item article">
+          <img
+            src="./assets/images/image-gaming-growth.jpg"
+            alt="article image"
+            class="article__img"
+          />
+
+          <div class="article__description description">
+            <span class="description__number">03</span>
+            <h3 class="description__title">The Growth of Gaming</h3>
+            <p class="description__paragraph">
+              How the pandemic has sparked fresh opportunities.
+            </p>
+          </div>
+        </article>
+      </section>
+    </main>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">ChapST1</a>.
+    </div>
+
+    <script src="./js/index.js"></script>
+  </body>
+</html>

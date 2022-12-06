@@ -1,0 +1,85 @@
+@import "../global/mixins";
+.header {
+  height: 6.875rem;
+  @include flex(row, space-between);
+
+  .logo {
+    width: auto;
+    &__img {
+      width: 4.375rem;
+      @media (max-width: 600px) {
+        width: 3.4375rem;
+      }
+    }
+  }
+  &__menu {
+    display: none;
+    @media (max-width: 600px) {
+      display: block;
+    }
+  }
+  .nav {
+    width: 28.125rem;
+    height: 100%;
+    transition: 0.5s;
+    @media (max-width: 600px) {
+      width: 100%;
+      position: fixed;
+      top: 0;
+      left: 0;
+      background-color: rgba(20, 20, 20, 0.551);
+
+      display: flex;
+      justify-content: flex-end;
+      opacity: 0;
+      visibility: hidden;
+    }
+    &__close {
+      position: absolute;
+      top: 2.25rem;
+      right: 1.25rem;
+      display: none;
+      @media (max-width: 600px) {
+        display: block;
+      }
+    }
+    &__ul {
+      width: 100%;
+      height: 100%;
+      @include flex(row, space-between);
+      list-style: none;
+
+      @media (max-width: 600px) {
+        width: 70%;
+        background-color: $bg;
+
+        @include flex(column, center);
+        gap: 0.625rem;
+      }
+    }
+    &__li {
+      @media (max-width: 600px) {
+        width: 100%;
+        padding: 0.625rem 0.9375rem;
+      }
+    }
+    &__a {
+      text-decoration: none;
+      color: $link-color;
+      font-size: 1em;
+      transition: $transition;
+      font-family: "Inter", sans-serif;
+      font-weight: 400;
+      &:hover {
+        color: $primary;
+      }
+      @media (max-width: 600px) {
+        font-size: 1.3em;
+      }
+    }
+  }
+  .nav-active {
+    opacity: 1;
+    visibility: visible;
+  }
+}
